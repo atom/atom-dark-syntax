@@ -230,13 +230,16 @@
   }
 }
 
-.source .entity.name.tag, .source .entity.other.attribute-name, .meta.tag.inline, .meta.tag.inline .entity {
+.source .entity.name.tag {
   color: #96CBFE;
+}
+.source .entity.other.attribute-name {
+  color: #C6C5FE;
 }
 
 .entity {
   &.other.attribute-name {
-    color: #FFD7B1;
+    color: #C6C5FE;
   }
 
   &.name.tag.namespace,
@@ -268,7 +271,11 @@
   }
 
   &.tag,
-  &.tag .entity {
+  &.tag.inline, {
+    color: #C6C5FE;
+  }
+  &.tag .name,
+  &.tag > .punctuation {
     color: #96CBFE;
   }
 
