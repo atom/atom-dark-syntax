@@ -230,7 +230,8 @@
   }
 }
 
-.source .entity.name.tag {
+.source .entity.name.tag,
+.source .punctuation.tag {
   color: #96CBFE;
 }
 .source .entity.other.attribute-name {
@@ -270,8 +271,8 @@
     color: #494949;
   }
 
-  &.tag,
-  &.tag.inline,
+  &.tag .entity,
+  &.tag > .punctuation,
   &.tag.inline .entity {
     color: #C6C5FE;
   }
