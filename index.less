@@ -230,13 +230,17 @@
   }
 }
 
-.source .entity.name.tag, .source .entity.other.attribute-name, .meta.tag.inline, .meta.tag.inline .entity {
+.source .entity.name.tag,
+.source .punctuation.tag {
   color: #96CBFE;
+}
+.source .entity.other.attribute-name {
+  color: #C6C5FE;
 }
 
 .entity {
   &.other.attribute-name {
-    color: #FFD7B1;
+    color: #C6C5FE;
   }
 
   &.name.tag.namespace,
@@ -267,8 +271,14 @@
     color: #494949;
   }
 
-  &.tag,
-  &.tag .entity {
+  &.tag .entity,
+  &.tag > .punctuation,
+  &.tag.inline .entity {
+    color: #C6C5FE;
+  }
+  &.tag .name,
+  &.tag.inline .name,
+  &.tag > .punctuation {
     color: #96CBFE;
   }
 
