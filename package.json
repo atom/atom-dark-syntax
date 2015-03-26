@@ -2,7 +2,7 @@
   "name": "atom-dark-syntax",
   "theme": "syntax",
   "version": "0.26.0",
-  "description": "Default dark theme for syntax",
+  "description": "A dark theme for syntax",
   "repository": "https://github.com/atom/atom-dark-syntax",
   "license": "MIT",
   "engines": {
