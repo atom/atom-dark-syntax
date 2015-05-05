@@ -124,10 +124,10 @@ atom-text-editor, :host {
 }
 
 .keyword {
-  color: #96CBFE;
+  color: @syntax-color-keyword;
 
   &.control {
-    color: #96CBFE;
+    color: @syntax-color-keyword;
   }
 
   &.operator {
@@ -144,7 +144,7 @@ atom-text-editor, :host {
 }
 
 .constant {
-  color: #99CC99;
+  color: @syntax-color-constant;
 
   &.numeric {
     color: #FF73FD;
@@ -152,7 +152,7 @@ atom-text-editor, :host {
 }
 
 .variable {
-  color: #C6C5FE;
+  color: @syntax-color-variable;
 }
 
 .invalid.deprecated {
@@ -216,7 +216,7 @@ atom-text-editor, :host {
   color: #FFFFB6;
 
   &.function {
-    color: #DAD085;
+    color: @syntax-color-function;
   }
 
   &.constant {
@@ -224,21 +224,21 @@ atom-text-editor, :host {
   }
 
   &.type.property-name.css {
-    color: #EDEDED;
+    color: @syntax-color-property;
   }
 }
 
 .source .entity.name.tag,
 .source .punctuation.tag {
-  color: #96CBFE;
+  color: @syntax-color-tag;
 }
 .source .entity.other.attribute-name {
-  color: #C6C5FE;
+  color: @syntax-color-attribute;
 }
 
 .entity {
   &.other.attribute-name {
-    color: #C6C5FE;
+    color: @syntax-color-attribute;
   }
 
   &.name.tag.namespace,
@@ -277,12 +277,12 @@ atom-text-editor, :host {
   &.tag .name,
   &.tag.inline .name,
   &.tag > .punctuation {
-    color: #96CBFE;
+    color: @syntax-color-tag;
   }
 
   &.selector.css .entity.name.tag {
     text-decoration: underline;
-    color: #96CBFE;
+    color: @syntax-color-tag;
   }
 
   &.selector.css .entity.other.attribute-name.tag.pseudo-class {
@@ -294,12 +294,12 @@ atom-text-editor, :host {
   }
 
   &.selector.css .entity.other.attribute-name.class {
-    color: #62B1FE;
+    color: @syntax-color-class;
   }
 
   &.property-group .support.constant.property-value.css,
   &.property-value .support.constant.property-value.css {
-    color: #F9EE98;
+    color: @syntax-color-value;
   }
 
   &.preprocessor.at-rule .keyword.control.at-rule {
