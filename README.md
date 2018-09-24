@@ -1,3 +1,7 @@
+### This package is now a part of the [core Atom repository](https://github.com/atom/atom/tree/master/packages/atom-dark-syntax), please direct all issues and pull requests there in the future!
+
+---
+
 # Atom Dark Syntax theme
 
 A dark syntax theme for Atom.
